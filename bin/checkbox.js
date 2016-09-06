@@ -1,0 +1,35 @@
+'use strict';
+
+function checkboxBehavior() {
+
+  if (!this.classList.contains('disabled')) {
+
+    var checkboxNode = this.parentNode.querySelector('[type=checkbox]');
+
+    this.classList.toggle('checked');
+
+    if (checkboxNode.hasAttribute('checked')) checkboxNode.removeAttribute('checked');else checkboxNode.setAttribute('checked', '');
+  }
+}
+
+function firefoxCompat(checkboxClass) {
+
+  [].slice.call(document.querySelectorAll('.' + checkboxClass)).forEach(function (node) {
+
+    node.style.display = 'none';
+
+    var span = document.createElement('span');
+
+    span.classList.add(checkboxClass.toString());
+    if (node.checked) span.classList.add('checked');
+    if (node.disabled) span.classList.add('disabled');
+    span.addEventListener('click', checkboxBehavior);
+
+    node.parentNode.insertBefore(span, node);
+  });
+}
+
+module.exports = function checkbox(checkboxClass) {
+
+  if (navigator.userAgent.search('Firefox') > -1) firefoxCompat(checkboxClass);
+};
