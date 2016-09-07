@@ -1,6 +1,6 @@
 {
   "name": "potamus-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Scripts for potamus components, that will provide you a small lib bundled with material design components",
   "main": "index.js",
   "directories": {
