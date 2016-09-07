@@ -6,7 +6,7 @@ module.exports = function button(buttonClass, rippleClass) {
 
         var ripple = document.createElement('span');
 
-        ripple.classList.add(rippleClass.toString());
+        ripple.classList.add(rippleClass);
         ripple.style.height = ripple.style.width = Math.max(rect.width, rect.height) + 'px';
 
         return ripple;
@@ -25,7 +25,7 @@ module.exports = function button(buttonClass, rippleClass) {
 
     function btnsRipple(e) {
 
-        if (!e.target.classList.contains(buttonClass.toString())) return false;
+        if (!e.target.classList.contains(buttonClass)) return false;
 
         var btn = e.target,
             rect = btn.getBoundingClientRect();

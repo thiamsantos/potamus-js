@@ -8,6 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "test:js": "webpack test/main.js test/bundled.js --watch",
+    "test:styl": "stylus -u autoprefixer-stylus -u potamus-stylus -w test/test.styl",
     "lint": "eslint components/",
     "build": "babel components -w -d bin"
   },
@@ -32,6 +34,8 @@
     "babel-cli": "^6.14.0",
     "babel-preset-es2015": "^6.14.0",
     "eslint": "^3.4.0",
-    "stylus": "^0.54.5"
+    "potamus-stylus": "0.0.2",
+    "stylus": "^0.54.5",
+    "webpack": "^1.13.2"
   }
 }

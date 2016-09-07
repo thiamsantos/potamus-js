@@ -7,3 +7,4 @@ module.exports = {
   checkbox: checkboxComponent,
   textField: textFieldComponent
 };
+
