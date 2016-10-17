@@ -33,7 +33,7 @@ potamus.button('some-awesome-button-class-name', 'name-for-ripple-effect-class')
 ```
 ### Checkbox
 ```html
-<input class="some-awesome-checkbox-class-name" type="checkbox">
+<input class="some-awesome-checkbox-class-name" type="checkbox" id="some-name" name="some-name">
 ```
 ```javascript
 potamus.checkbox('some-awesome-checkbox-class-name');
@@ -47,8 +47,8 @@ This component doesn't need javascript.
 ### Text-field
 ```html
 <div class="some-awesome-text-field-name">
-  <input class="some-awesome-text-field-name_sufix-input" type="text">
-  <label class="some-awesome-text-field-name__sufix-label">Nome</label>
+  <input class="some-awesome-text-field-name_sufix-input" type="text" id="some-name">
+  <label class="some-awesome-text-field-name__sufix-label" for="some-name">Nome</label>
 </div>
 ```
 ```javascript
