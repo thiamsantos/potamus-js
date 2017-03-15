@@ -1,4 +1,6 @@
 # potamus-stylus
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/thiamsantos/potamus-js.svg)](https://greenkeeper.io/)
 Scripts for [potamus](https://github.com/thiamsantos/potamus) components.
 
 ```$ npm install --save-dev potamus-js```
