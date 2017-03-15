@@ -30,12 +30,12 @@
   },
   "homepage": "https://github.com/thiamsantos/potamus-js#readme",
   "devDependencies": {
-    "autoprefixer-stylus": "^0.10.0",
+    "autoprefixer-stylus": "^0.13.0",
     "babel-cli": "^6.14.0",
     "babel-preset-es2015": "^6.14.0",
     "eslint": "^3.4.0",
     "potamus-stylus": "0.0.2",
     "stylus": "^0.54.5",
-    "webpack": "^1.13.2"
+    "webpack": "^2.2.1"
   }
 }
